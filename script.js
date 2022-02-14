@@ -81,7 +81,7 @@ console.log(submit);
     function nextQuestions(){
         i++;
         // image.innerHTML=questions[i].image; 
-        // question.innerHTML= questions[i].question; 
+        question.innerHTML= questions[i].question; 
         buttonA.innerHTML=questions[i].answers[0];
         buttonB.innerHTML=questions[i].answers[1];
         buttonC.innerHTML=questions[i].answers[2];
