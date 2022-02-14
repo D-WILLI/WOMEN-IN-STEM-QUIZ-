@@ -68,7 +68,6 @@ console.log(submit);
          ]
          
     function setQuestions(){
-            addImage();     
             question.innerHTML= questions[i].question; 
             buttonA.innerHTML=questions[i].answers[0];
             buttonB.innerHTML=questions[i].answers[1];
@@ -78,15 +77,11 @@ console.log(submit);
     }
    
 
-function addImage(){
-    img.innerHTML=questions[i].image; 
-    console.log("okay"); 
-}
 
     function nextQuestions(){
         i++;
-        image.innerHTML=questions[i].image; 
-        question.innerHTML= questions[i].question; 
+        // image.innerHTML=questions[i].image; 
+        // question.innerHTML= questions[i].question; 
         buttonA.innerHTML=questions[i].answers[0];
         buttonB.innerHTML=questions[i].answers[1];
         buttonC.innerHTML=questions[i].answers[2];
