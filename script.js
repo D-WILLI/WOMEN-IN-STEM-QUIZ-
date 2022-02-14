@@ -40,28 +40,54 @@ console.log(submit);
                 question: 'Who is considered the "first ever programmer" ',
                 answers: [
                     "A - Ada Lovelace",
-                    "B - 1",
-                    "C - 2",
-                    "D - 3"],
+                    "B - Grace Hopper",
+                    "C - Katherine Johnson",
+                    "D - Margaret Hamilton"],
                 correctAnswer: "A - Ada Lovelace"
             },
          
             {
                 question: "African American women make up what percent of Computing Related jobs?",
-                answers: ["A-5%","B-1%","C-10%","D-3%"],
+                answers: [
+                    "A-5%",
+                    "B-1%",
+                    "C-10%",
+                    "D-3%"],
+
                 correctAnswer: "D-3%"
             },
          
             {
                 question: "Current COO of Facebook",
-                answers: ["A-{}","B-[]","C-``","D-''"],
-                correctAnswer: "A-{}"
+                answers: [
+                    "A-Sheryl Sandberg",
+                    "B-Marissa Mayer",
+                    "C-Annie Easley",
+                    "D-Adele Goldberg"],
+
+                correctAnswer: "A-Sheryl Sandberg"
             },
          
             {
-                question: "When using API's what is the method we pass the URL to",
-                answers: ["A-.bring()","B-.return()","C-.then()","D-.fetch()"],
-                correctAnswer: "D-.fetch()"
+                question: "NASA credits the coining of the term Software Engineering to ",
+                answers: [
+                    "A-Katherine Johnson",
+                    "B-Megan Smith",
+                    "C-Adele Goldberg",
+                    "D-Margaret Hamilton"],
+
+                correctAnswer: "D-Margaret Hamilton"
+            },
+
+            {
+                question: "The International Day of Women and Girls in Science is a day that allows us to honor achievements and place focus on girls entering Science, Technology, Engineering, and Mathematics (STEM) careers...What day is this celebrated? ",
+                answers: [
+                    "A-January 30th",
+                    "B-February 11th",
+                    "C-June 9th",
+                    "D-March 16th"],
+
+                correctAnswer: "B-February 11th"
             },
          
          
@@ -73,6 +99,7 @@ console.log(submit);
             buttonB.innerHTML=questions[i].answers[1];
             buttonC.innerHTML=questions[i].answers[2];
             buttonD.innerHTML=questions[i].answers[3];
+            nextQuestion.style.visibility = 'hidden'; 
             
     }
    
@@ -86,6 +113,7 @@ console.log(submit);
         buttonB.innerHTML=questions[i].answers[1];
         buttonC.innerHTML=questions[i].answers[2];
         buttonD.innerHTML=questions[i].answers[3];
+        nextQuestion.style.visibility = 'hidden'; 
 }
 
 
