@@ -16,7 +16,8 @@ var gameScore= document.querySelector(".gameScore");
 var submit = document.querySelector(".submit"); 
 var nextQuestion = document.querySelector(".next-question"); 
 var img = document.querySelector("#images"); 
-
+const express = require ('express'); 
+const mySql = require ('mysql'); 
 
 
 submit.innerHTML = "Hello"; 
@@ -241,7 +242,20 @@ function highScorePage() {
    correct.style.visibility='hidden';
 }
 
+// connection 
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    port:3300, 
+    password: ''
 
+}); 
+
+// connection to sql 
+connection.connect((err) => {
+    if (err) throw err;
+    runSearch();
+  });
 
 // function finalScore (){
 // finalPage.style.visibility='visible'; 
