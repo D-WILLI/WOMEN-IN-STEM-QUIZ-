@@ -100,6 +100,7 @@ console.log(submit);
             buttonC.innerHTML=questions[i].answers[2];
             buttonD.innerHTML=questions[i].answers[3];
             nextQuestion.style.visibility = 'hidden'; 
+            correct.style.visibility='hidden';
             
     }
    
@@ -113,7 +114,8 @@ console.log(submit);
         buttonB.innerHTML=questions[i].answers[1];
         buttonC.innerHTML=questions[i].answers[2];
         buttonD.innerHTML=questions[i].answers[3];
-        nextQuestion.style.visibility = 'hidden'; 
+        nextQuestion.style.visibility = 'hidden';
+        correct.style.visibility='hidden'; 
 }
 
 
@@ -155,12 +157,13 @@ function answersOutput (event){
 
    if (event.target.textContent === questions[i].correctAnswer){
        correct.innerHTML= "Correct"; 
+       correct.style.visibility='visible'; 
        userScore=userScore+20;
        console.log("SCORE",userScore); 
        
    } else {
        correct.innerHTML= "Incorrect Answer"; 
-       
+       correct.style.visibility='visible'; 
     }
   
 }
